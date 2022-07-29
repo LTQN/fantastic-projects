@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    background:  url("/projet2/assets/vecteezy_comic-pop-burst-background-with-halftone-dots-free-vector_.jpg") no-repeat center /cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(245, 245, 245); 
+    height: 100%;
+    width: 100%;
+  
+}
+h1{
+    width: 40%;
+    font-size: 80px;
+    padding-top: 10%;
+    border: 2px solid rgb(245, 245, 245);
+
+}
+.joueurs{
+    /*display: flex;*/
+    justify-content: center;
+    margin-top: 60px;
+    border: 2px solid rgb(245, 245, 245);
+    word-spacing: ;
+}
+
+
+.resultat{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(245, 245, 245);
+}
+.btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: rgba(254, 48, 82, 0.793);
+    border-radius: 8px;
+    border: 2px solid rgb(245, 245, 245);
+}
