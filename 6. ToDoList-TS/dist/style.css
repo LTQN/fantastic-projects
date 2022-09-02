@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    padding: 3rem;
+    font-size: 3rem;
+}
+
+body{
+    font-family: "Arima", cursive;
+    background-image: url(/todolist/assets/03092022_nuraghies_09.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}   
+
+.container{
+    position: relative;
+    min-height: 95vh;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*border: 2px solid rgb(255, 255, 255);*/
+    /*background: rgb(255, 255, 255);*/
+}
+
+form{
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    font-size: 1.5rem;
+}
+
+input[type="text"]{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="checkbox"]{
+    margin-left: 10px;
+    cursor: pointer;
+   /* webkit-appearance: none; */
+    width:20px; height:20px; 
+    background:white; 
+    border-radius: 15px;
+    border:2px solid #555; 
+ }
+input[type="supprimer"]{
+    display: flex;
+
+    
+}
+
+
+
+.todo-btn, .todo-delete-all{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.todo-delete-one{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+footer{
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(46, 46, 63);
+    /*border: 1px solid black;*/
+    
+
+}
