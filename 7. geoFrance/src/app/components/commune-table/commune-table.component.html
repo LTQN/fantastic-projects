@@ -1,0 +1,43 @@
+<ng-container  *ngIf="communesIsLoaded">
+
+    <div>
+    
+    <label for="search" class="form-label">Rechercher une commune</label>
+    <input type="text" class="form-control" name="search" placeholder="Ex : Orne" [(ngModel)]="search" autocomplete="off">
+    </div>
+    
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="pop" type="button">Nom</th>
+                <th scope="col">Code</th>
+                <th scope="col">Code département</th>
+                <th scope="col">Code Région</th>
+                <th scope="col">Code postal</th> 
+                <th scope="col" class="pop" (click) = "triCommunes()" type="button">Population</th>
+    
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let commune of getCommunes()">
+                <td>{{ commune.nom }}</td>
+                <td>{{ commune.code }}</td>
+                <td>{{ commune.codeDepartement }}</td> 
+                <td>{{ commune.codeRegion }}</td>
+                <td>{{ commune.codesPostaux }}</td>
+                <td>{{ commune.population }}</td>
+               
+                
+            </tr>
+    
+        </tbody>
+    
+    
+    
+    </table>
+    
+    <pagination [maxSize]="11" [totalItems]="getLength()" [(ngModel)]="currentPage" previousText="Précédent" nextText="Suivant"></pagination>
+    
+    </ng-container>

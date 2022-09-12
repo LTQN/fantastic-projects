@@ -1,0 +1,12 @@
+.pop{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+}
